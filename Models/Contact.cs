@@ -49,6 +49,12 @@ namespace Contacts.Models
       _last = newLast;
     }
 
+    public int GetID()
+    {
+      return _id;
+    }
+    // NO set ID because the Contact is managing the ID itself along with the GetAll List.
+
 
 // The above Getter and Setter should be the model for all of them!
 // When the form is sent, ALL of the setters will be called in the controller at the path.

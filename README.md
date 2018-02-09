@@ -57,9 +57,9 @@ _The root path of the project is "/" (in this case, Localhost:5000)._
 
 * Display the Contact List on the Index page.
 
-* Have the controller add all of the Contact info to the List of objects. <--
+* Have the controller add all of the Contact info to the List of objects.
 
-* Have a form at the bottom of the Index page that will delete all Contacts from the List (use the ClearAll() method).
+* Have a form at the bottom of the Index page that will delete all Contacts from the List (use the ClearAll() method). <--
 
 
 * =============================

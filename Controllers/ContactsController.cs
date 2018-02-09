@@ -30,12 +30,17 @@ namespace Contacts.Controllers
         // [HttpGet("/")]
         public ActionResult Index()
         {
-          Contact myContact = new Contact("Andy", "Grossberg", "5544 SE Hillwood Circle", "", "Portland", "Oregon", "97267", "USA", "(503) 659-5626");
-          Contact anotherContact = new Contact("Bob", "Barr", "5534 SE Hillwood Circle", "", "Portland", "Oregon", "97267", "USA", "(503) 555-1212");
+          // Contact myContact = new Contact("Andy", "Grossberg", "5544 SE Hillwood Circle", "", "Portland", "Oregon", "97267", "USA", "(503) 659-5626");
+          // Contact anotherContact = new Contact("Bob", "Barr", "5534 SE Hillwood Circle", "", "Portland", "Oregon", "97267", "USA", "(503) 555-1212");
 
-          List<Contact> allContacts = Contact.GetAll();
+          List<Contact> allContacts = Contact.GetAll(); // This creates the list every time the page is loaded. So I think the list is doubled on refresh!
           return View(allContacts);
-          // return View(anotherContact);
+
+          // return View(Contact.GetAll());
+
+
+
+
         }
 
         // // [HttpGet("/items")]
@@ -63,7 +68,6 @@ namespace Contacts.Controllers
         [HttpPost("/Contacts/create")]
         public ActionResult Create()
         {
-          Console.WriteLine("Got the Post to the right route!");
 
           Contact newContact = new Contact (
             Request.Form["first-name"], Request.Form["last-name"],
@@ -84,12 +88,15 @@ namespace Contacts.Controllers
         }
         //
         // // [HttpPost("/items/delete")]
-        // [HttpPost("/Items/delete")]
-        // public ActionResult DeleteAll()
-        // {
-        //     Item.ClearAll();
-        //     return View();
-        // }
+        [HttpPost("/Contacts/clear")]
+        public ActionResult ClearAll()
+        {
+          Console.WriteLine("Got the Post to the right route (/Contacts/clear)!");
+
+            Contact.ClearAll();
+            List<Contact> allContacts = Contact.GetAll();
+            return View("Index", allContacts);
+        }
 
     }
 }
