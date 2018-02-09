@@ -41,11 +41,11 @@ _The root path of the project is "/" (in this case, Localhost:5000)._
 
 * Display an Index page
 
-* Create a Contact class <--
+* Create a Contact class
 
 * Create an instance of one Contact
 
-* Display the Contact on the Index page
+* Display the Contact on the Index page <--
 
 * Create a Contact List and add a Contact to it
 

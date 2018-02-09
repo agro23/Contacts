@@ -30,13 +30,21 @@ namespace Contacts.Models
       _id = _instances.Count;
     }
 
-    public string GetFirstname()
+    public string GetFirstName()
     {
       return _first;
     }
-    public void SetFirstname(string newFirst)
+    public void SetFirstName(string newFirst)
     {
       _first = newFirst;
+    }
+    public string GetLastName()
+    {
+      return _last;
+    }
+    public void SetLastName(string newLast)
+    {
+      _last = newLast;
     }
 // The above Getter and Setter should be the model for all of them!
 // When the form is sent, ALL of the setters will be called in the controller at the path.

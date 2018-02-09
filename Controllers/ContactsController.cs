@@ -26,9 +26,11 @@ namespace Contacts.Controllers
         //     return View();
         // }
         [Route("/")]
+        // [HttpGet("/")]
         public ActionResult Index()
         {
-          return View();
+          Contact myContact = new Contact("Andy", "Grossberg", "5544 SE Hillwood Circle", "", "Portland", "Oregon", "USA", "(503) 659-5626");
+          return View(myContact);
         }
 
         // // [HttpGet("/items")]
