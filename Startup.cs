@@ -33,7 +33,8 @@ namespace Contacts
             });
 
             app.UseDeveloperExceptionPage();
-
+            app.UseStaticFiles();
+            
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync("Document Not Found!");

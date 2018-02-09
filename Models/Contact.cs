@@ -112,10 +112,6 @@ namespace Contacts.Models
     }
     // NO set ID because the Contact is managing the ID itself along with the GetAll List.
 
-
-// When the Index shows the list, only the first and last will retrieve via the getter and produce a string in the LI.
-// HOWEVER, it will link to the ID number of that Contact from the list.
-
     public static List<Contact> GetAll()
     {
       return _instances;

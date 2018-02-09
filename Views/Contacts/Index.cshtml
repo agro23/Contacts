@@ -1,25 +1,42 @@
-<h1>CONTACTS LIST</h1>
-
-@if (@Model.Count == 0)
-{
-  <h3>No Contacts have been added yet!</h3>
+@{
+  Layout = "_Layout";
 }
-else
-{
-  <ol>
-    @foreach (var contact in Model)
+<div class="container well">
+  <div class="jumbotron">
+    <h1>CONTACTS LIST</h1>
+  </div>
+    <div class="container">
+      <div class="panel row">
+    @if (@Model.Count == 0)
     {
-      <li><a href="/Contacts/@contact.GetID()">@contact.GetFirstName()&nbsp;@contact.GetLastName()</a></li>
+      <h3 class="some-space">Contacts List is empty!</h3>
     }
-  </ol>
-}
+    else
+    {
+      <ol>
+        @foreach (var contact in Model)
+        {
+          <li><a href="/Contacts/@contact.GetID()" class="contacts-name">@contact.GetFirstName()&nbsp;@contact.GetLastName()</a></li>
+        }
+      </ol>
+    }
+  </div>
 
 
+  <!-- <div class="form-group row">
+    <label for="new-phone" class="col-2 col-form-label">Phone Number</label>
+    <div class="col-10">
+      <input class="form-control" type="text" id="newPhone" name="new-phone">
+    </div>
+  </div> -->
 
-<form action="/Contacts/new" method="post">
-<button type="submit">Create a Contact</button>
-</form>
-
-<form action="/Contacts/clear" method="post">
-  <button type="submit" name="button" class="btn btn-danger">Clear Contacts</button>
-</form>
+    <div class="form-group panel row">
+      <form action="/Contacts/new" class="col-3" method="post">
+        <button type="submit" class="btn btn-deafault">Create a Contact</button>
+      </form>
+      <form action="/Contacts/clear" class="col-2" method="post">
+        <button type="submit" name="button" class="btn btn-danger">Clear Contacts</button>
+      </form>
+    </div>
+  </div>
+</div>

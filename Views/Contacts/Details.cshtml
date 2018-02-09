@@ -1,9 +1,23 @@
-<h2>Can I at least get here???</h2>
-<h3>@Model.GetFirstName()&nbsp;@Model.GetLastName()</h3>
-<p>@Model.GetAddress1()</p>
-<p>@Model.GetAddress2()</p>
-<p>@Model.GetCity(),&nbsp;@Model.GetStateOrProvince()&nbsp;&nbsp;@Model.GetPostalCode()</p>
-<p>@Model.GetCountry()</p>
-<p>@Model.GetPhone()</p>
-
-<p><a href='/'>Go Back</a></p>
+@{
+  Layout = "_Layout";
+}
+<div class="container well">
+  <div clas="row">
+    <h2>@Model.GetFirstName()&nbsp;@Model.GetLastName()</h2>
+    <p class="styled-p">@Model.GetAddress1()</p>
+    @{
+      if (@Model.GetAddress2() != "")
+      {
+        <p class="styled-p">@Model.GetAddress2()</p>
+      }
+    }
+    <p class="styled-p">@Model.GetCity(),&nbsp;@Model.GetStateOrProvince()&nbsp;&nbsp;@Model.GetPostalCode()</p>
+    <p class="styled-p">@Model.GetCountry()</p>
+    <p class="styled-p">@Model.GetPhone()</p>
+  </div>
+  <div class="row">
+    <form action="/" method="post">
+      <button type="submit" name="button" class="btn btn-primary">Go Back</button>
+    </form>
+  </div>
+</div>

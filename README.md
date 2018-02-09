@@ -63,13 +63,15 @@ _The root path of the project is "/" (in this case, Localhost:5000)._
 
 * Add a Find() method
 
-* Make A Details page to show all the info from a Contact. <--
+* Make A Details page to show all the info from a Contact.
 
 * Have each Contact on the Index page be a link to A Details showing all the Contact info.
 
-* Refactor code.
+* Clean up and/or Refactor code.
 
-* Add CSS and Javascript via Bootstrap to all .cshtml files (LOOK IN TO PARTIALS!)
+* Add CSS and Javascript via Bootstrap to all .cshtml files (LOOK IN TO PARTIALS!) <--
+
+* Add a Company name and if there is one, add first and last (if not blank) to parentheses after the name.
 
 * Add a form to ask for a Search query
 
