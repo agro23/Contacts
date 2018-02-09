@@ -49,9 +49,9 @@ _The root path of the project is "/" (in this case, Localhost:5000)._
 
 * Create a Contact List with two Contacts added to it
 
-* Display the Contact List on the Index page <--
+* Display the Contact List on the Index page
 
-* Create a View called CreateForm with a form that will take a Contact with a SUBMIT button and Post action.
+* Create a View called CreateForm with a form that will take a Contact with a SUBMIT button and Post action.<--
 
 * Have the controller add that Contact info to the List of objects
 
