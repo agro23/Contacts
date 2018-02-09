@@ -1,5 +1,8 @@
 <h1>CONTACTS LIST</h1>
-<p>@Model.GetFirstName()&nbsp;@Model.GetLastName()<p>
+@foreach(var contact in Model)
+{
+  <li>@contact.GetFirstName()&nbsp;@contact.GetLastName</li>
+}
 <p><a href="/Contacts/new">Add another item</a></p>
 
 <!-- <form action="/Items" method="post">

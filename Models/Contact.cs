@@ -46,6 +46,8 @@ namespace Contacts.Models
     {
       _last = newLast;
     }
+
+
 // The above Getter and Setter should be the model for all of them!
 // When the form is sent, ALL of the setters will be called in the controller at the path.
 // When the Index shows the list, only the first and last will retrieve via the getter and produce a string in the LI.

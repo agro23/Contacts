@@ -30,7 +30,11 @@ namespace Contacts.Controllers
         public ActionResult Index()
         {
           Contact myContact = new Contact("Andy", "Grossberg", "5544 SE Hillwood Circle", "", "Portland", "Oregon", "USA", "(503) 659-5626");
-          return View(myContact);
+          Contact anotherContact = new Contact("Bob", "Barr", "5534 SE Hillwood Circle", "", "Portland", "Oregon", "USA", "(503) 555-1212");
+
+          List<Contact> allContacts = Contact.GetAll();
+          return View(allContacts);
+          // return View(anotherContact);
         }
 
         // // [HttpGet("/items")]
