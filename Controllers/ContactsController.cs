@@ -27,21 +27,44 @@ namespace Contacts.Controllers
         //     return View();
         // }
         [Route("/")]
-        // [HttpGet("/")]
+        // [HttpGet("/")]   // change this back?
         public ActionResult Index()
         {
           // Contact myContact = new Contact("Andy", "Grossberg", "5544 SE Hillwood Circle", "", "Portland", "Oregon", "97267", "USA", "(503) 659-5626");
           // Contact anotherContact = new Contact("Bob", "Barr", "5534 SE Hillwood Circle", "", "Portland", "Oregon", "97267", "USA", "(503) 555-1212");
 
-          List<Contact> allContacts = Contact.GetAll(); // This creates the list every time the page is loaded. So I think the list is doubled on refresh!
+// This creates the list every time the page is loaded. So I think the list is doubled on refresh!
+// This issue should vanish when I produce the list of links to details pages.
+
+          List<Contact> allContacts = Contact.GetAll();
           return View(allContacts);
-
           // return View(Contact.GetAll());
-
-
-
-
         }
+
+
+
+// NEED THE DETAILS PAGE:
+        [HttpGet("/Contacts/{id}")]
+        public ActionResult Details(int id)
+        {
+            // Dictionary<string, object> model = new Dictionary<string, object>(); // don't need a dictionary, just a list
+            Contact chosenContact = Contact.Find(id);
+            // Console.WriteLine("Got the chosen Contact at least!");
+            // Console.WriteLine("And it is in the city: " + chosenContact.GetCity());
+
+            // string showingContact += chosenContact.GetFirstName();
+            // List<Contact>  = selectedCategory.GetItems();
+            // model.Add("category", selectedCategory);
+            // model.Add("items", categoryItems);
+
+            // BUILD THE STRING FROM THE OBJECT
+            // model is that string below
+            // return View(chosenContact); // pass the object to the details page and list it since it's just HTML
+            return View (chosenContact);
+        }
+
+
+
 
         // // [HttpGet("/items")]
         // [HttpGet("/Items")]
@@ -86,8 +109,7 @@ namespace Contacts.Controllers
           // return View("Index", allItems);
           // return View("Items", newItem);
         }
-        //
-        // // [HttpPost("/items/delete")]
+
         [HttpPost("/Contacts/clear")]
         public ActionResult ClearAll()
         {

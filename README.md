@@ -59,25 +59,24 @@ _The root path of the project is "/" (in this case, Localhost:5000)._
 
 * Have the controller add all of the Contact info to the List of objects.
 
-* Have a form at the bottom of the Index page that will delete all Contacts from the List (use the ClearAll() method). <--
+* Have a form at the bottom of the Index page that will delete all Contacts from the List (use the ClearAll() method).
 
+* Add a Find() method
 
-* =============================
+* Make A Details page to show all the info from a Contact. <--
 
-* Have each contact on the Index page be a link to details about the contact.
+* Have each Contact on the Index page be a link to A Details showing all the Contact info.
 
 * Refactor code.
 
-* Add CSS and Javascript via Bootstrap to all .cshtml files
-
-* Add a Find() method
+* Add CSS and Javascript via Bootstrap to all .cshtml files (LOOK IN TO PARTIALS!)
 
 * Add a form to ask for a Search query
 
 * Add a route to the Find() method and enable the search
 
 * IF TIME PERMITS:
-  - ADD A DELETE() METHOD
+  - ADD A DELETE() METHOD FOR INDIVIDUAL CONTACTS
   - SEPARATE THE ADDRESS FROM THE CONTACT NAME
 
 ## Setup/Installation Requirements

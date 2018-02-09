@@ -32,6 +32,8 @@ namespace Contacts.Models
       _id = _instances.Count;
     }
 
+// GETTERS and SETTERS
+
     public string GetFirstName()
     {
       return _first;
@@ -48,7 +50,62 @@ namespace Contacts.Models
     {
       _last = newLast;
     }
-
+    public string GetAddress1()
+    {
+      return _address1;
+    }
+    public void SetAddress1(string newAddress1)
+    {
+      _address1 = newAddress1;
+    }
+    public string GetAddress2()
+    {
+      return _address2;
+    }
+    public void SetAddress2(string newAddress2)
+    {
+      _address2 = newAddress2;
+    }
+    public string GetCity()
+    {
+      return _city;
+    }
+    public void SetCity(string newCity)
+    {
+      _city = newCity;
+    }
+    public string GetStateOrProvince()
+    {
+      return _stateOrProvince;
+    }
+    public void SetStateOrProvince(string newStateOrProvince)
+    {
+      _stateOrProvince = newStateOrProvince;
+    }
+    public string GetCountry()
+    {
+      return _country;
+    }
+    public void SetCountry(string newCountry)
+    {
+      _city = newCountry;
+    }
+    public string GetPostalCode()
+    {
+      return _postalCode;
+    }
+    public void SetPostalCode(string newPostalCode)
+    {
+      _postalCode = newPostalCode;
+    }
+    public string GetPhone()
+    {
+      return _phone;
+    }
+    public void SetPhone(string newPhone)
+    {
+      _phone = newPhone;
+    }
     public int GetID()
     {
       return _id;
@@ -56,8 +113,6 @@ namespace Contacts.Models
     // NO set ID because the Contact is managing the ID itself along with the GetAll List.
 
 
-// The above Getter and Setter should be the model for all of them!
-// When the form is sent, ALL of the setters will be called in the controller at the path.
 // When the Index shows the list, only the first and last will retrieve via the getter and produce a string in the LI.
 // HOWEVER, it will link to the ID number of that Contact from the list.
 

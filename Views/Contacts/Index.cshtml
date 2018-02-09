@@ -1,45 +1,24 @@
 <h1>CONTACTS LIST</h1>
-@foreach(var contact in Model)
-{
-  <li>@contact.GetFirstName()&nbsp;@contact.GetLastName()</li>
-}
-<!-- <p><a href="/Contacts/new">Add another item</a></p> -->
 
-<!-- <h1>ADD A CONTACT</h1>
-<form action="/Contacts" method="post">
-<form>
-  <label for="first-name">First Name</label><br>
-  <input id="newFirst" name="first-name" type="text"><br>
-  <label for="last-name">Last Name</label><br>
-  <input id="newLast" name="last-name" type="text"><br>
-  <label for="new-address1">Address 1</label><br>
-  <input id="newAddress1" name="new-address1" type="text"><br>
-  <label for="new-address2">Address 2</label><br>
-  <input id="newAddress2" name="new-address2" type="text"><br>
-  <label for="new-city">City</label><br>
-  <input id="newCity" name="new-city" type="text"><br>
-  <label for="new-stateOrProvince">State or Province</label><br>
-  <input id="newStateOrProvince" name="new-stateOrProvince" type="text"><br>
-  <label for="new-country">Country</label><br>
-  <input id="newContact" name="new-country" type="text"><br>
-  <label for="new-postalcode">Postal or Zip Code</label><br>
-  <input id="newPostalCode" name="new-postalcode" type="text"><br>
-  <label for="new-phone">Phone Number</label><br>
-  <input id="newPhone" name="new-phone" type="text"><br>
-<br>
-  <button type="submit">Submit</button>
-</form> -->
+@if (@Model.Count == 0)
+{
+  <h3>No Contacts have been added yet!</h3>
+}
+else
+{
+  <ol>
+    @foreach (var contact in Model)
+    {
+      <li><a href="/Contacts/@contact.GetID()">@contact.GetFirstName()&nbsp;@contact.GetLastName()</a></li>
+    }
+  </ol>
+}
+
+
 
 <form action="/Contacts/new" method="post">
 <button type="submit">Create a Contact</button>
 </form>
-
-
-<!-- <form action="/Items" method="post">
-  <label for="new-item">Item description:</label>
-  <input id="new-item" name="new-item" type="text">
-  <button type="submit">Submit</button>
-</form> -->
 
 <form action="/Contacts/clear" method="post">
   <button type="submit" name="button" class="btn btn-danger">Clear Contacts</button>
