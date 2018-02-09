@@ -12,11 +12,12 @@ namespace Contacts.Models
     private string _city;
     private string _stateOrProvince;
     private string _country;
+    private string _postalCode;
     private string _phone;
     private static List<Contact> _instances = new List<Contact> {};
     private int _id;
 
-    public Contact (string firstName, string lastName, string anAddress1, string anAddress2, string aCity, string aStateOrProvince, string aCountry, string aPhone)
+    public Contact (string firstName, string lastName, string anAddress1, string anAddress2, string aCity, string aStateOrProvince, string aCountry, string aPostal, string aPhone)
     {
       _first = firstName;
       _last = lastName;
@@ -25,6 +26,7 @@ namespace Contacts.Models
       _city = aCity;
       _stateOrProvince = aStateOrProvince;
       _country = aCountry;
+      _postalCode = aPostal;
       _phone = aPhone;
       _instances.Add(this);
       _id = _instances.Count;

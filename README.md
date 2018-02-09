@@ -39,24 +39,32 @@ _The root path of the project is "/" (in this case, Localhost:5000)._
 
 * Create basic files including the .csproj, Startup, and Program files.
 
-* Display an Index page
+* Display an Index page.
 
-* Create a Contact class
+* Create a Contact class.
 
-* Create an instance of one Contact
+* Create an instance of one Contact.
 
-* Display the Contact on the Index page
+* Display the Contact on the Index page.
 
-* Create a Contact List with two Contacts added to it
-
-* Display the Contact List on the Index page
-
-* Create a View called CreateForm with a form that will take a Contact with a SUBMIT button and Post action.<--
-
-* Have the controller add that Contact info to the List of objects
+* Create a Contact List with two Contacts added to it.
 
 * Display the Contact List on the Index page.
 
+* Create a View called CreateForm with a form that will take a Contact with a SUBMIT button and Post action.
+
+* Have the controller add some of that Contact info plus some default info to the List of objects.
+
+* Display the Contact List on the Index page.
+
+* Have the controller add all of the Contact info to the List of objects. <--
+
+* Have a form at the bottom of the Index page that will delete all Contacts from the List (use the ClearAll() method).
+
+
+* =============================
+
+* Have each contact on the Index page be a link to details about the contact.
 
 * Refactor code.
 
