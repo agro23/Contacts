@@ -1,0 +1,8 @@
+/Users/Guest/Desktop/Contacts/bin/Debug/netcoreapp1.1/Contacts.deps.json
+/Users/Guest/Desktop/Contacts/bin/Debug/netcoreapp1.1/Contacts.runtimeconfig.json
+/Users/Guest/Desktop/Contacts/bin/Debug/netcoreapp1.1/Contacts.runtimeconfig.dev.json
+/Users/Guest/Desktop/Contacts/obj/Debug/netcoreapp1.1/Contacts.AssemblyInfo.cs
+/Users/Guest/Desktop/Contacts/bin/Debug/netcoreapp1.1/Contacts.dll
+/Users/Guest/Desktop/Contacts/bin/Debug/netcoreapp1.1/Contacts.pdb
+/Users/Guest/Desktop/Contacts/obj/Debug/netcoreapp1.1/Contacts.dll
+/Users/Guest/Desktop/Contacts/obj/Debug/netcoreapp1.1/Contacts.pdb
