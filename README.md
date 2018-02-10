@@ -16,9 +16,9 @@ _This is a simple Address Book._
 
 ## Rules for the Contact List assignment
 
-_Using MVC, make an address book where you can store contact information for people you know. Use Razor to display information on each page.
+_Using MVC, make an address book where you can store contact information for people you know. Use Razor to display information on each page._
 
-Create a Contact class. This class should include properties for the person's name, phone number and address.
+_Create a Contact class. This class should include properties for the person's name, phone number and address.
 The homepage of the app at the root path (localhost:5000) should list all Contacts.
 The homepage should also contain a link to a page presenting the user with a form they can fill out to create a new Contact. After the form is submitted, the new Contact object should be saved into a static List and the user should be routed back to the homepage.
 The homepage should also contain a form with only a clear button at the bottom of the list of all contacts. When this is pressed, all Contacts should be deleted, and the user should be routed back to the homepage._
@@ -75,7 +75,7 @@ _The root path of the project is "/" (in this case, Localhost:5000)._
 
 * Add a Company name and if there is one, add first and last (if not blank) to parentheses after the name.
 
-* **IF TIME PERMITS:**
+**IF TIME PERMITS:**
 
 * ADD A FORM TO ASK FOR A SEARCH QUERY
   - ADD A ROUTE TO THE Find() METHOD TO ENABLE THE SEARCH
