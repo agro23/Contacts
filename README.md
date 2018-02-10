@@ -35,6 +35,8 @@ _The root path of the project is "/" (in this case, Localhost:5000)._
 
 ### The following specs are included in the program:
 
+**COMPLETED**
+
 * Create a project directory as well as ones for Model, View, and Controller.
 
 * Create basic files including the .csproj, Startup, and Program files.
@@ -69,17 +71,17 @@ _The root path of the project is "/" (in this case, Localhost:5000)._
 
 * Clean up and/or Refactor code.
 
-* Add CSS and Javascript via Bootstrap to all .cshtml files (LOOK IN TO PARTIALS!) <--
+* Add CSS and Javascript via Bootstrap to all .cshtml files  
 
 * Add a Company name and if there is one, add first and last (if not blank) to parentheses after the name.
 
-* Add a form to ask for a Search query
+* **IF TIME PERMITS:**
 
-* Add a route to the Find() method and enable the search
-
-* IF TIME PERMITS:
-  - ADD A DELETE() METHOD FOR INDIVIDUAL CONTACTS
-  - SEPARATE THE ADDRESS FROM THE CONTACT NAME
+* ADD A FORM TO ASK FOR A SEARCH QUERY
+  - ADD A ROUTE TO THE Find() METHOD TO ENABLE THE SEARCH
+  - GO TO THE DETAILS PAGE WITH RESULTS
+* ADD A DELETE() METHOD FOR INDIVIDUAL CONTACTS
+* SEPARATE THE ADDRESS FROM THE CONTACT NAME
 
 ## Setup/Installation Requirements
 

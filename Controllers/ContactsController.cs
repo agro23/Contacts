@@ -30,6 +30,7 @@ namespace Contacts.Controllers
 
           Contact newContact = new Contact (
             Request.Form["first-name"], Request.Form["last-name"],
+            Request.Form["company-name"],
             Request.Form["new-address1"], Request.Form["new-address2"],
             Request.Form["new-city"], Request.Form["new-stateOrProvince"],
             Request.Form["new-country"], Request.Form["new-postalcode"],

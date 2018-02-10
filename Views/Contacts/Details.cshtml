@@ -4,6 +4,12 @@
 <div class="container well">
   <div clas="row">
     <h2>@Model.GetFirstName()&nbsp;@Model.GetLastName()</h2>
+    @{
+      if (@Model.GetCompany() != "")
+      {
+        <h2>@Model.GetCompany()</h2>
+      }
+    }
     <p class="styled-p">@Model.GetAddress1()</p>
     @{
       if (@Model.GetAddress2() != "")

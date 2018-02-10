@@ -7,6 +7,7 @@ namespace Contacts.Models
     // private string _id;
     private string _first;
     private string _last;
+    private string _company;
     private string _address1;
     private string _address2;
     private string _city;
@@ -17,10 +18,11 @@ namespace Contacts.Models
     private static List<Contact> _instances = new List<Contact> {};
     private int _id;
 
-    public Contact (string firstName, string lastName, string anAddress1, string anAddress2, string aCity, string aStateOrProvince, string aCountry, string aPostal, string aPhone)
+    public Contact (string firstName, string lastName, string aCompany, string anAddress1, string anAddress2, string aCity, string aStateOrProvince, string aCountry, string aPostal, string aPhone)
     {
       _first = firstName;
       _last = lastName;
+      _company = aCompany;
       _address1 = anAddress1;
       _address2 = anAddress2;
       _city = aCity;
@@ -49,6 +51,14 @@ namespace Contacts.Models
     public void SetLastName(string newLast)
     {
       _last = newLast;
+    }
+    public string GetCompany()
+    {
+      return _company;
+    }
+    public void SetCompany(string newCompany)
+    {
+      _company = newCompany;
     }
     public string GetAddress1()
     {
