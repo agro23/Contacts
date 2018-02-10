@@ -15,7 +15,6 @@ namespace Contacts.Controllers
         {
           List<Contact> allContacts = Contact.GetAll();
           return View(allContacts);
-          // return View(Contact.GetAll());
         }
 
         [Route("/Contacts/new")]
